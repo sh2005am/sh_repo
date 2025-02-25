@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden; /* Prevents horizontal scroll */
+  }
+.hamburger {
+   display: none;
+  }
+
+  .hamburger div {
+    height: 4px;
+    background-color: white;
+    border-radius: 2px;
+  }
+body {
+    color: white;
+}
+.main1 {
+  background-image: url(images/main1_back.webp);
+  width: auto; /* Height is fixed, width adjusts automatically */
+  background-repeat: no-repeat; /* Prevents tiling */
+  background-position: center; /* Centers the image */
+  height: 100vh;
+  background-size: cover; /* Full viewport height */
+}
+.main2{
+    background-image: url(images/main2_back.webp);
+    width: auto; /* Height is fixed, width adjusts automatically */
+  background-repeat: no-repeat; /* Prevents tiling */
+  background-position: center; /* Centers the image */
+  height: 100vh;
+  background-size: cover;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.left{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.navbar {
+    display: flex;
+    list-style: none;
+    font-size: 20px;
+}
+.navbar li a {
+    text-decoration: none;
+    padding: 8px 20px;
+    color: rgba(255, 255, 255, 0.821);
+}
+.right ul{
+    display: flex;
+    justify-content: flex-start;
+    
+}
+.right ul li {
+    list-style: none;
+    margin: 6px;
+    padding-right: 8px;
+}
+li img {
+        width: 32px;
+        height: 32px;
+}
+.cont1 {
+    text-align: center;
+    margin: 8rem;
+}
+h1 {
+    font-size: 72px;
+    font-family: "Archivo Black", serif;
+    font-weight: 300;
+  
+}
+p {
+    font-size: 24px;
+    padding: 16px;
+    font-family: "Raleway", serif;
+    color: rgba(255, 255, 255, 0.826);
+}
+.left .logo {
+    padding: 8px;
+    font-size: 24px;
+    font-family: "Archivo Black", serif;
+}
+.clickable {
+    display: flex;
+    justify-content: space-evenly;
+    padding: px;
+}
+.btn1,.btn2{
+    padding:8px;
+    font-size: 28px;
+}
+.btn1 {
+    border-radius: 1.5rem; 
+    background-image: linear-gradient(to right, rgb(0, 110, 253), rgb(203, 214, 224));
+    transition: background-color 0.3s ease;
+}
+.btn2 {
+    border-radius: 1.5rem; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    color: white;
+    background: none;
+   border-color: rgb(0, 110, 255);
+   
+}
+@media (max-width: 768px) {
+    .hamburger {
+        cursor: pointer;
+        width: 30px;
+        height: 22px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .cont1 {
+        margin: 2rem 2rem;
+      }
+      .navbar {
+        display: none;
+      }
+} 
+@media (max-width: 558px) {
+    .clickable {
+        flex-direction: column;
+    }
+}
+@media (max-width: 420px) {
+    .main1, .main2 {
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+    }
+      .cont1 {
+        margin: 10px;
+        padding: 0;
+      }
+      .cont1 h1 {
+        font-size: 56px;
+    }
+    .cont1 p {
+        font-size: 16px;
+    }
+
+    .left {
+        padding-left: 8px;
+        margin: 0;
+    }
+    .left .logo {
+      padding: 0;
+    }
+}

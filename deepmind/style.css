@@ -54,6 +54,29 @@ header {
     list-style: none;
     font-size: 20px;
 }
+header.active {
+    background-color: rgba(0, 0, 0, 0.97);
+}
+header.active .navbar{ /* Styles when the navbar is ACTIVE (menu open) */
+    display: flex;
+    flex-direction: column;
+    position: absolute;;
+    top: 80px;
+    left: 0;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.97);
+    width: 1000%;
+    padding: 16px;
+    align-items: start;
+    padding-bottom: 200px;
+}
+header.active .right {
+    display: none;
+}
+.navbar.active li a {
+    font-size: 36px;
+    
+}
 .navbar li a {
     text-decoration: none;
     padding: 8px 20px;
@@ -76,6 +99,7 @@ li img {
 .cont1 {
     text-align: center;
     margin: 8rem;
+   
 }
 h1 {
     font-size: 72px;

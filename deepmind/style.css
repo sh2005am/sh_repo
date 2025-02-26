@@ -27,7 +27,8 @@ body {
   background-repeat: no-repeat; /* Prevents tiling */
   background-position: center; /* Centers the image */
   height: 100vh;
-  background-size: cover; /* Full viewport height */
+  background-size: cover;
+ /* Full viewport height */
 }
 .main2{
     background-image: url(images/main2_back.webp);
@@ -38,10 +39,13 @@ body {
   background-size: cover;
 }
 header {
+    position: fixed;
+    min-width: 100vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.9);
 }
 .left{
     display: flex;
@@ -98,7 +102,7 @@ li img {
 }
 .cont1 {
     text-align: center;
-    margin: 8rem;
+    padding: 8rem;
    
 }
 h1 {
@@ -151,7 +155,7 @@ p {
         justify-content: space-between;
       }
       .cont1 {
-        margin: 2rem 2rem;
+        padding: 8rem;
       }
       .navbar {
         display: none;
@@ -169,8 +173,7 @@ p {
         background-position: center;
     }
       .cont1 {
-        margin: 10px;
-        padding: 0;
+         padding: 7rem 1rem;
       }
       .cont1 h1 {
         font-size: 56px;
